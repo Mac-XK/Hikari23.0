@@ -1,6 +1,6 @@
-# Hikari21.2-MacXK
+# Hikari23-MacXK
 
-基于 LLVM 22.0 的 Hikari 代码混淆工具链，适用于 iOS/macOS 开发。
+基于 LLVM 23.0 的 Hikari 代码混淆工具链，适用于 iOS/macOS 开发。
 
 ## 功能特性
 
@@ -53,7 +53,7 @@ ls ~/Library/Developer/Toolchains/
 ### 1. 选择 Toolchain
 
 在 Xcode 菜单中选择：
-**Xcode → Toolchains → Hikari21.2-MacXK**
+**Xcode → Toolchains → Hikari23-MacXK**
 
 ### 2. 配置混淆选项
 
@@ -163,7 +163,7 @@ xcodebuild -project MyProject.xcodeproj -scheme MyScheme TOOLCHAINS=Hikari21.2-M
 
 ### 问题：Undefined symbol: ___isPlatformVersionAtLeast
 
-**解决方案**：确保 toolchain 包含 `lib/clang/22/lib/darwin/` 目录下的运行时库
+**解决方案**：确保 toolchain 包含 `lib/clang/23/lib/darwin/` 目录下的运行时库
 
 ### 问题：Unknown command line argument '-enable-xxx'
 
@@ -175,9 +175,9 @@ xcodebuild -project MyProject.xcodeproj -scheme MyScheme TOOLCHAINS=Hikari21.2-M
 
 ## 版本信息
 
-- LLVM 版本：22.0.0
+- LLVM 版本：23.0.0
 - Hikari 版本：基于开源版本修改
-- 构建日期：2026年1月
+- 构建日期：2026年4月
 - 作者：MacXK
 
 ## 许可证
